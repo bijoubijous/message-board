@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>stop, criminal scum!</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <h1>sure hope this shit worked lol</h1>
+        <p><a href="/letters/new">new letter</a></p>
+        <% letters.forEach(function(letter){ %>
+            <div>
+                <p><%= letter.date.toLocaleString('en-US') %></p>
+                <p><a href="/letters/<%= letter._id %>">more info</a></p>
+            </div>
+       <% }) %>
+    </body>
+</html>

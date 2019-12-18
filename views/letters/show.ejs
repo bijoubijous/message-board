@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>you've got mail</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <p><a href="/letters">go back</a></p>
+        <% if(letter.recipient.username === currentUser.username){ %>
+        <h1><%= letter.date.toLocaleString('en-US') %></h1>
+        <p><%= letter.content %></p>
+        <p>from <%= letter.author.username %></p>
+        <% } %>
+    </body>
+</html>

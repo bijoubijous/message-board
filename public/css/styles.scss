@@ -1,0 +1,80 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+#grid{
+    margin: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-image: linear-gradient(greenyellow 1px, transparent 1px), linear-gradient(90deg, greenyellow 1px, transparent 1px);
+    background-size: 2em 2em;
+    justify-content: center;
+}
+aside{
+    width: 12rem;
+    height: 100%;
+    display: block;
+    position: fixed;
+    left: 0;
+    .icon{
+        margin: 0;
+    }
+    p, a{
+        margin: 0;
+        text-decoration: none;
+        color: white;
+    }
+}
+.windowsborder{
+    border-style: outset;
+    border-width: 2px;
+    max-width: 45rem;
+    max-height: 45rem;
+    justify-content: center;
+}
+.window{
+    position: relative;
+    z-index: 0;
+    justify-content: center;
+}
+.windowtop{
+    display: inline-flex;
+    background-image: linear-gradient(90deg, #15ff00, #00ccff);
+    color: white;
+    margin: 1px;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color: #bdbebd;
+    border-top: outset;
+    z-index: 0;
+    bottom: 0;
+    justify-content: space-between;
+    .homebutton, .timedisplay{
+        display: inline-flex;
+        margin: 3px;
+        padding: 2px;
+        max-height: 22px;
+        align-items: center;
+    }
+    .homebutton{
+        border: outset;
+    }
+    .time{
+        border: inset;
+    }
+}
